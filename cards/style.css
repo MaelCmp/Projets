@@ -18,18 +18,12 @@ body {
     align-items: center;
     justify-content: center;
     }
-  
-  /*
-  h1 {
-    font-size: 100px;
-  }
-  */
+
 
 h1{
     margin: 0 0 25% 0;
     font-size: 50px;
     }
-
   
 
 div.card {
@@ -47,8 +41,18 @@ div.card {
 
     /* ombre portée */
     box-shadow: #0000008a 11px 10px 11px;
+
+    user-select: none;
+    cursor: pointer;
     }
 
+    div.card i {
+      color: bwhitelack;
+      font-size: 12px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
 
 @keyframes gradient {
 	0% {
