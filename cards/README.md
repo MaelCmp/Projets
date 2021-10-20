@@ -1,4 +1,22 @@
 ﻿# Cards
 #### Author : CAMPO Maël
 
-## Premier projet DIMI, algoritme Codage Web
+## Installation 
+
+Téléchargez le dossier
+
+Ouvrez le fichier ```index.html``` dans votre navigateur 
+
+
+## Détails
+
+Ce projet permet de créer des cartes contenant des émojis et une rareté aléatoire à chaque création.
+Il est existe quatre rareté :
+    - normal => violet
+    - silver => argent
+    - gold => or
+    - ultra rare (ur) => multicolore
+
+Liste des émojis : 🤖,👾,👽,⚡,☄️,🌌,⚜️
+
+Il est possible de créer une carte en cliquant sur une carte déjà existante, ou en appuyant sur la barre espace.
