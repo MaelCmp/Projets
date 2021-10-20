@@ -1,5 +1,28 @@
-// Fonction cloneOnClick qui reproduit une carte à chaque click
-///////////////////////////////////////////////////////////////
+const getRandomClassName = () => {
+  const r = Math.random()
+
+  // 50% de chance de retourner "silver"
+  if (r < 0.5) {
+    return 'silver'
+  }
+
+  // 15% (65 - 50) de chance de retourner "gold"
+  if (r < 0.65) {
+    return 'gold'
+  }
+
+  // 5% (70 - 65) de chance de retourner "UR"
+  if (r < 0.70) {
+    return 'ur'
+  }
+  
+  // dans tous les autres cas renvoyer ""
+  return 'normal'
+}
+const getRandomEmoji = () => {
+  return '👾'
+}
+
 const clone = (source) => {
 	const clone = source.cloneNode(true)
 	document.body.append(clone)
@@ -10,6 +33,11 @@ const clone = (source) => {
 	clone.style.top = y + 'px'
 	const angle = Math.round(Math.random() * 360)
 	clone.style.transform = `rotate(${angle}deg)`
+
+  const randomClass = getRandomClassName()
+  clone.className = `card ${randomClass}`
+
+  // clone.querySelector('div').innerHTML = getRandomEmoji()
   }
   
   const cloneOnClick = (event) => {
