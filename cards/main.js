@@ -1,26 +1,29 @@
 const getRandomClassName = () => {
   const r = Math.random()
 
-  // 50% de chance de retourner "silver"
-  if (r < 0.5) {
+  // 40% de chance de retourner "silver"
+  if (r < 0.4) {
     return 'silver'
   }
 
-  // 15% (65 - 50) de chance de retourner "gold"
-  if (r < 0.65) {
+  // 15% (55 - 40) de chance de retourner "gold"
+  if (r < 0.55) {
     return 'gold'
   }
 
-  // 5% (70 - 65) de chance de retourner "UR"
-  if (r < 0.70) {
+  // 5% (60 - 55) de chance de retourner "UR"
+  if (r < 0.6) {
     return 'ur'
   }
   
   // dans tous les autres cas renvoyer ""
   return 'normal'
 }
+
 const getRandomEmoji = () => {
-  return '👾'
+  let tab = ['🤖','👾','👽','⚡','☄️','🌌','⚜️']
+  const randomEmoji = tab[Math.floor(Math.random() * tab.length)];
+  return randomEmoji
 }
 
 const clone = (source) => {
@@ -31,13 +34,16 @@ const clone = (source) => {
 	const y = Math.round(Math.random() * window.innerHeight)
 	clone.style.left = x + 'px'
 	clone.style.top = y + 'px'
-	const angle = Math.round(Math.random() * 360)
+	const angle = Math.round(Math.random() * 70 - 35)
 	clone.style.transform = `rotate(${angle}deg)`
 
+  // utilise la fonction getRandomClassName afin de créer une carte aléatoire
   const randomClass = getRandomClassName()
   clone.className = `card ${randomClass}`
 
-  // clone.querySelector('div').innerHTML = getRandomEmoji()
+  // utilise la fonction getRandomEmoji afin de créer une carte aléatoire
+  clone.querySelector('div div div').innerHTML = getRandomEmoji() + `<i class="fa fa-trash-o" id="trash" style="font-size:28px" onclick="destroyCard(event)"></i>`
+ 
   }
   
   const cloneOnClick = (event) => {
