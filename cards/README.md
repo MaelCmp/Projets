@@ -20,6 +20,6 @@ Il est existe quatre rareté :
 | Gold | Or | 
 | Ultra rare | Multicolore |    
 
-Liste des émojis : 🤖,👾,👽,⚡,☄️,🌌,⚜️
+Liste des émojis : 🤖,👾,👽,⚡,☄️,🌌,⚜️,👻
 
 Il est possible de créer une carte en cliquant sur une carte déjà existante, ou en appuyant sur la barre espace.
