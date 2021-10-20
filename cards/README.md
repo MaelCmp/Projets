@@ -12,7 +12,7 @@ Ouvrez le fichier ```index.html``` dans votre navigateur
 
 Ce projet permet de créer des cartes contenant des émojis et une rareté aléatoire à chaque création.
 
-Il est existe quatre rareté :
+Il existe quatre niveau de rareté :
 | Rareté  | Couleur |
 | :---------------:|:---------------:|
 | Normal  | Violet |  
