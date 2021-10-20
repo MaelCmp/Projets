@@ -11,11 +11,14 @@ Ouvrez le fichier ```index.html``` dans votre navigateur
 ## Détails
 
 Ce projet permet de créer des cartes contenant des émojis et une rareté aléatoire à chaque création.
+
 Il est existe quatre rareté :
-    - normal => violet
-    - silver => argent
-    - gold => or
-    - ultra rare (ur) => multicolore
+| Rareté  | Couleur |
+| :---------------:|:---------------:|
+| Normal  | Violet |  
+| Silver  | Gris |   
+| Gold | Or | 
+| Ultra rare | Multicolore |    
 
 Liste des émojis : 🤖,👾,👽,⚡,☄️,🌌,⚜️
 
