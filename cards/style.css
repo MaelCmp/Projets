@@ -1,58 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 body, body * {
-    margin: 0;
-    box-sizing: border-box;
-    position: relative;
-  }
-  
+	margin: 0;
+	box-sizing: border-box;
+	position: relative;
+	}
+	
 body {
-    color: white;
-    font-family: 'Roboto', serif;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
+	color: white;
+	font-family: 'Roboto', serif;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	overflow: hidden;
+	}
 
 
 h1{
-    margin: 0 0 25% 0;
-    font-size: 50px;
-    }
-  
+	margin: 0 0 25% 0;
+	font-size: 50px;
+	}
+	
 
 div.card {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    font-size: 70px;
-    border-radius: 20px;
-    background-color: rgb(114, 39, 129);
+	position: absolute;
+	}
 
-    /* centrer le contenu: */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+div.card > div {
+	transition: all 0.2s ease-out;
+	}
+	
+div.card > div > div {
+	width: 200px;
+	height: 200px;
+	font-size: 70px;
+	border-radius: 20px;
+	background-color: rgb(114, 39, 129);
 
-    /* ombre portée */
-    box-shadow: #0000008a 11px 10px 11px;
+	/* centrer le contenu: */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    user-select: none;
-    cursor: pointer;
-    }
+	/* ombre portée */
+	box-shadow: #0000008a 11px 10px 11px;
 
-    div.card i {
-      color: bwhitelack;
-      font-size: 12px;
-      position: absolute;
-      top: 15px;
-      right: 15px;
-    }
+	user-select: none;
+	cursor: pointer;
+
+	transition: transform 4s ease-out ;
+	}
+
+div.card > div:hover {
+	transform: scale(1.15);
+}
+
+div.card > div > div:hover {
+	transform: rotate(360deg);
+}
+
+div.card > div > div > i {
+	color: white;
+	font-size: 12px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
 
 @keyframes gradient {
 	0% {
