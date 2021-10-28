@@ -1,0 +1,32 @@
+body, body * {
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;    
+}
+
+html {
+    --tile-size: 120px;
+    --grid-col: 4;
+    --grid-row: 3;
+}
+
+main#grid {
+    border: solid 2px #222;
+    width: calc(var(--grid-col) * var(--tile-size));
+    height: calc(var(--grid-row) * var(--tile-size));
+}
+
+div.tile {
+    width: var(--tile-size);
+    height: var(--tile-size);
+    background-color: #fff;
+    /*border: solid 1px #111 ;*/
+}
