@@ -30,8 +30,8 @@ const clone = (source) => {
 	const clone = source.cloneNode(true)
 	document.body.append(clone)
   
-	const x = Math.round(Math.random() * window.innerWidth)
-	const y = Math.round(Math.random() * window.innerHeight)
+	const x = Math.round(Math.random() * window.innerWidth) - 100
+	const y = Math.round(Math.random() * window.innerHeight) - 100
 	clone.style.left = x + 'px'
 	clone.style.top = y + 'px'
 	const angle = Math.round(Math.random() * 70 - 35)
