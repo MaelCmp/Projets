@@ -1,5 +1,5 @@
 const getRandomColor = () => {
-    let tab = ['#222','#5a0b79','#0b2e79','#0b7930','#790b0b','#b36b0d','#ddd']
+    let tab = ['#003d69','#006dd5','#ff4849','#ffd03a','#f8ffb0']
     const randomColor = tab[Math.floor(Math.random() * tab.length)];
     return randomColor
 }
@@ -9,6 +9,8 @@ const createType1 = () => {
     const clone = source.cloneNode(true)
     clone.style.backgroundColor = getRandomColor()
     clone.querySelector('.layer1').style.backgroundColor = getRandomColor()
+    clone.querySelector('.layer2').style.backgroundColor = getRandomColor()
+    clone.querySelector('.layer3').style.backgroundColor = getRandomColor()
     return clone
 }
 

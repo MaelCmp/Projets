@@ -21,7 +21,7 @@ html {
 }
 
 main#grid {
-    border: solid 2px #222;
+    border: solid 3px #222;
     width: calc(var(--grid-col) * var(--tile-size));
     height: calc(var(--grid-row) * var(--tile-size));
     box-sizing: content-box;
