@@ -50,7 +50,7 @@ const move = () => {
   const currentPixel = getPixel(x, y)
 
   if (currentPixel === '#ffffff') {
-    setPixel(x, y, '#eb0')
+    setPixel(x, y, 'rgb(18, 10, 92)')
     turnLeft()
   } else {
     setPixel(x, y, '#ffffff')
